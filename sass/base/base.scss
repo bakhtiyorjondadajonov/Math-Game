@@ -1,0 +1,26 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  @media (max-width: 950px) {
+    font-size: 50%;
+  }
+  @media (max-width: 450px) {
+    font-size: 40%;
+  }
+}
+body {
+  font-family: $font-family;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(2, min-content);
+  gap: 2rem;
+  overflow: hidden;
+}

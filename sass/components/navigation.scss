@@ -1,0 +1,29 @@
+.navigation {
+  grid-column: 1/-1;
+  background-color: #fe4a49;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.cup-box {
+  font-size: 3rem;
+  @media (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+.list {
+  list-style: none;
+  display: flex;
+
+  & > :not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+.link {
+  text-decoration: none;
+}
+.item {
+  font-size: 2rem;
+}

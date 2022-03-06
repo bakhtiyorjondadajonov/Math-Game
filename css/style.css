@@ -1,0 +1,158 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media (max-width: 950px) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 450px) {
+    html {
+      font-size: 40%; } }
+
+body {
+  font-family: "Luckiest Guy"; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  grid-template-rows: repeat(2, min-content);
+  gap: 2rem;
+  overflow: hidden; }
+
+.heading-3 {
+  display: inline; }
+
+.paragraph {
+  font-size: 15rem;
+  margin-right: 2rem; }
+
+.symbol {
+  color: #fed766; }
+
+.equation {
+  color: orangered; }
+
+.first-number {
+  color: #fe4a49; }
+
+.second-number {
+  color: #2ab7ca; }
+
+.secret {
+  color: grey; }
+
+.style {
+  color: white;
+  text-transform: uppercase; }
+
+.btn-active {
+  border-bottom: solid 6px white; }
+
+.navigation {
+  grid-column: 1/-1;
+  background-color: #fe4a49;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem; }
+
+.cup-box {
+  font-size: 3rem; }
+  @media (max-width: 450px) {
+    .cup-box {
+      font-size: 2rem; } }
+
+.list {
+  list-style: none;
+  display: flex; }
+  .list > :not(:last-child) {
+    margin-right: 2rem; }
+
+.link {
+  text-decoration: none; }
+
+.item {
+  font-size: 2rem; }
+
+.main {
+  width: 100vw;
+  height: auto;
+  grid-column: 1/-1;
+  grid-row: 2 / span 1;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  height: 80vh;
+  gap: 2rem;
+  padding: 1rem; }
+  @media (max-width: 750px) {
+    .main {
+      grid-template-columns: 1fr; } }
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1.5rem black;
+  border-radius: 3px; }
+  @media (max-width: 750px) {
+    .display {
+      height: 50vh; } }
+
+.display-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff; }
+
+.results {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 100%;
+  align-items: center;
+  justify-items: center;
+  margin-right: 3rem; }
+  @media (max-width: 750px) {
+    .results {
+      grid-template-columns: repeat(3, 33%); } }
+
+.answer-display {
+  width: 100%;
+  font-size: 15rem;
+  color: white;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: 0 0.5rem 1.5rem black;
+  border-radius: 3px;
+  transition: 0.2s;
+  overflow: hidden;
+  word-wrap: break-word; }
+  .answer-display:hover {
+    cursor: pointer;
+    position: relative;
+    transform: translateY(-0.5rem); }
+
+.answer-1 {
+  background-color: #fe4a49; }
+
+.answer-2 {
+  background-color: #2ab7ca; }
+
+.answer-3 {
+  background-color: #fed766; }
+
+.answer-checker {
+  position: absolute;
+  font-size: 3rem;
+  transform: translateY(-20rem);
+  background-image: linear-gradient(to right, #fe4a49, #2ab7ca, #fed766);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
